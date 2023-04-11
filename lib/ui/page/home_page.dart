@@ -1,6 +1,7 @@
+import 'package:project_menu/ui/page/about_page.dart';
+import 'package:project_menu/ui/page/service_page.dart';
 import 'package:project_menu/widget/carouselslider_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:project_menu/widget/contents1_widget.dart';
 import 'package:project_menu/widget/contents2_widget.dart';
 import 'package:project_menu/widget/footer_widget.dart';
 import 'package:project_menu/widget/menu_widget.dart';
@@ -24,13 +25,10 @@ class HomePage extends StatelessWidget {
                       child: Column(
                         children: [
                           ImgSlider(),
-                          contents1(),
-                          contents2(),
                           Container(
                             height: 600,
                             color: Colors.orange,
                           ),
-                          footer()
                         ],
                       ),
                     ),
