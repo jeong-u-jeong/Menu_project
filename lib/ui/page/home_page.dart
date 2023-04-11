@@ -11,30 +11,35 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        child: Row(
-          children: [
-            menu(),
-            Expanded(
-              child: SingleChildScrollView(
-                child: Column(
-                  children: [
-                    ImgSlider(),
-                    contents1(),
-                    contents2(),
-                    Container(
-                      height: 600,
-                      color: Colors.orange,
+    return ScreenUtilInit(
+      designSize: Size(2224, 1668),
+        builder: (context, child) => MaterialApp(
+          home: Scaffold(
+            body: Container(
+              child: Row(
+                children: [
+                  menu(),
+                  Expanded(
+                    child: SingleChildScrollView(
+                      child: Column(
+                        children: [
+                          ImgSlider(),
+                          contents1(),
+                          contents2(),
+                          Container(
+                            height: 600,
+                            color: Colors.orange,
+                          ),
+                          footer()
+                        ],
+                      ),
                     ),
-                    footer()
-                  ],
-                ),
+                  )
+                ],
               ),
-            )
-          ],
+            ),
+          ),
         ),
-      ),
     );
   }
 }

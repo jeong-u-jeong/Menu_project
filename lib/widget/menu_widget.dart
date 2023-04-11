@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:project_menu/global_asset/global_style.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class menu extends StatelessWidget {
   const menu({Key? key}) : super(key: key);
@@ -22,7 +23,7 @@ class menu extends StatelessWidget {
               ),
               Container(
                 width: 190,
-                height: 150,
+                height: 150.h,
                 color: Colors.white,
                 child: Center(
                   child: Text('Logo',
