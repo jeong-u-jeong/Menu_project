@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ImgSlider extends StatefulWidget {
   const ImgSlider({Key? key}) : super(key: key);
@@ -15,7 +16,7 @@ class _ImgSliderState extends State<ImgSlider> {
     return Container(
       child: CarouselSlider(
         options: CarouselOptions(
-          height: 1080,
+          height: MediaQuery.of(context).size.height,
           autoPlay: true,
             viewportFraction: 1.0
         ),

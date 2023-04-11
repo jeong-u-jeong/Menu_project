@@ -4,6 +4,7 @@ import 'package:project_menu/src/widget/contents1_widget.dart';
 import 'package:project_menu/src/widget/contents2_widget.dart';
 import 'package:project_menu/src/widget/footer_widget.dart';
 import 'package:project_menu/src/widget/menu_widget.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
