@@ -2,6 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:project_menu/global_asset/global_style.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:project_menu/ui/page/about_page.dart';
+import 'package:project_menu/ui/page/designer_page.dart';
+import 'package:project_menu/ui/page/home_page.dart';
+import 'package:project_menu/ui/page/service_page.dart';
 
 class menu extends StatelessWidget {
   const menu({Key? key}) : super(key: key);
@@ -39,10 +43,30 @@ class menu extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  mainMenu('HOME',(){}),
-                  mainMenu('ABOUT',(){}),
-                  mainMenu('SERVICE',(){}),
-                  mainMenu('DESIGNER',(){}),
+                  mainMenu('HOME',(){
+                    Navigator.push(
+                        context,
+                        UnanimatedPageRoute(builder: (context) => HomePage(),),
+                    );
+                  }),
+                  mainMenu('ABOUT',(){
+                    Navigator.push(
+                      context,
+                      UnanimatedPageRoute(builder: (context) => AboutPage()),
+                    );
+                  }),
+                  mainMenu('SERVICE',(){
+                    Navigator.push(
+                      context,
+                      UnanimatedPageRoute(builder: (context) => ServicePage()),
+                    );
+                  }),
+                  mainMenu('DESIGNER',(){
+                    Navigator.push(
+                      context,
+                      UnanimatedPageRoute(builder: (context) => Designer()),
+                    );
+                  }),
                 ],
               ),
             ],
@@ -109,4 +133,28 @@ Widget mainMenu(String menu, GestureTapCallback onTap){
       ),
     ),
   );
+}
+
+class UnanimatedPageRoute<T> extends MaterialPageRoute<T> {
+  UnanimatedPageRoute({
+    required Widget Function(BuildContext) builder,
+    RouteSettings? settings,
+    bool maintainState = true,
+    bool fullscreenDialog = false,
+  }) : super(
+    builder: builder,
+    settings: settings,
+    maintainState: maintainState,
+    fullscreenDialog: fullscreenDialog,
+  );
+
+  @override
+  Widget buildTransitions(
+      BuildContext context,
+      Animation<double> animation,
+      Animation<double> secondaryAnimation,
+      Widget child,
+      ) {
+    return child;
+  }
 }
