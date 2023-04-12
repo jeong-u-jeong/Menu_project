@@ -377,7 +377,11 @@ class SpecialCare extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(title),
+              Text(title,
+                style: TextStyle(
+                  fontSize: 26.sp
+                ),
+              ),
               Container(
                 margin: EdgeInsets.only(left: 10.w, top: 5.h,),
                 child: Column(
