@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:project_menu/global_asset/global_style.dart';
 import 'package:project_menu/widget/menu_widget.dart';
 
 class Designer extends StatelessWidget {
@@ -29,7 +30,7 @@ class Designer extends StatelessWidget {
                         Container(
                           width: double.infinity,
                           height: 1000.h,
-                          color: Colors.black.withOpacity(0.5),
+                          color: GlobalStyle.dark.withOpacity(0.5),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
@@ -88,7 +89,7 @@ class First extends StatelessWidget {
           height: 1000.h,
           fit: BoxFit.cover,
         ),
-        Container(width: 80.w,),
+        Container(width: 60.w,),
         Expanded(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -155,172 +156,24 @@ class First extends StatelessWidget {
                     ),
                   ),
                   Container(height: 20.h,),
-                  Row(
-                    children: [
-                      Flexible(
-                        flex: 2,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            RichText(
-                              text: TextSpan(
-                                  text: '- 두피 스켈링 ',
-                                  style: TextStyle(
-                                    fontSize: 27.sp,
-                                  ),
-                                  children: [TextSpan(
-                                    text: 'Scaling Scalp',
-                                    style: TextStyle(
-                                      fontSize: 27.sp,
-                                    ),
-                                  ),
-                                  ]
-                              ),
-                            ),
-                            Container(
-                              margin: EdgeInsets.only(left: 10.w, top: 5.h,),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text('두피속 노폐물을 친환경 에센셜 오일을 활용하여 제거하고',
-                                    style: TextStyle(
-                                      fontSize: 22.sp,
-                                      color: Colors.grey,
-                                    ),),
-                                  Text('혈액순환을 도와 두피질환 · 탈모를 예방하는 아로마 테라피',
-                                    style: TextStyle(
-                                      fontSize: 22.sp,
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Container(height: 50.h,),
-                            RichText(
-                              text: TextSpan(
-                                  text: '- 두피 개선 관리 ',
-                                  style: TextStyle(
-                                    fontSize: 27.sp,
-                                  ),
-                                  children: [TextSpan(
-                                    text: 'Vital Scalp Care',
-                                    style: TextStyle(
-                                      fontSize: 27.sp,
-                                    ),
-                                  ),
-                                  ]
-                              ),
-                            ),
-                            Container(
-                              margin: EdgeInsets.only(left: 10.w, top: 5.h,),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text('모발이 자라는 두피환경을 개선하여 탈모 중지와',
-                                    style: TextStyle(
-                                      fontSize: 22.sp,
-                                      color: Colors.grey,
-                                    ),),
-                                  Text('두피 개선을 우선으로 하는 건강하고 풍부한 영양 테라피',
-                                    style: TextStyle(
-                                      fontSize: 22.sp,
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Flexible(
-                        flex: 1,
-                        child: Column(
-                          children: [
-                            Row(
-                              children: [
-                                RichText(
-                                  text: TextSpan(
-                                      text: '80,000',
-                                      style: TextStyle(
-                                        fontSize: 25.sp,
-                                        color: Colors.grey,
-                                      ),
-                                      children: [TextSpan(
-                                        text: ' (30분)',
-                                        style: TextStyle(
-                                          fontSize: 20.sp,
-                                          color: Colors.grey,
-                                        ),
-                                      ),
-                                      ]
-                                  ),
-                                ),
-                                Container(width: 40.w,),
-                                RichText(
-                                  text: TextSpan(
-                                      text: '150,000',
-                                      style: TextStyle(
-                                        fontSize: 25.sp,
-                                        color: Colors.grey,
-                                      ),
-                                      children: [TextSpan(
-                                        text: ' (60분)',
-                                        style: TextStyle(
-                                          fontSize: 20.sp,
-                                          color: Colors.grey,
-                                        ),
-                                      ),
-                                      ]
-                                  ),
-                                ),
-                              ],
-                            ),
-                            Container(height: 100.h,),
-                            Row(
-                              children: [
-                                RichText(
-                                  text: TextSpan(
-                                      text: '120,000',
-                                      style: TextStyle(
-                                        fontSize: 25.sp,
-                                        color: Colors.grey,
-                                      ),
-                                      children: [TextSpan(
-                                        text: ' (40분)',
-                                        style: TextStyle(
-                                          fontSize: 20.sp,
-                                          color: Colors.grey,
-                                        ),
-                                      ),
-                                      ]
-                                  ),
-                                ),
-                                Container(width: 40.w,),
-                                RichText(
-                                  text: TextSpan(
-                                      text: '150,000',
-                                      style: TextStyle(
-                                        fontSize: 25.sp,
-                                        color: Colors.grey,
-                                      ),
-                                      children: [TextSpan(
-                                        text: ' (60분)',
-                                        style: TextStyle(
-                                          fontSize: 20.sp,
-                                          color: Colors.grey,
-                                        ),
-                                      ),
-                                      ]
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
+                  SpecialCare(
+                    title: '- 두피 스켈링 Scaling Scalp',
+                    contents1: '두피속 노폐물을 친환경 에센셜 오일을 활용하여 제거하고',
+                    contents2: '혈액순환을 도와 두피질환 · 탈모를 예방하는 아로마 테라피',
+                    price1: '80,000',
+                    price2: '150,000',
+                    time1: '30',
+                    time2: '60',
+                  ),
+                  Container(height: 50.h,),
+                  SpecialCare(
+                    title: '- 두피 개선 관리 Vital Scalp Care',
+                    contents1: '모발이 자라는 두피환경을 개선하여 탈모 중지와',
+                    contents2: '두피 개선을 우선으로 하는 건강하고 풍부한 영양 테라피',
+                    price1: '120,000',
+                    price2: '150,000',
+                    time1: '40',
+                    time2: '60',
                   ),
                   Container(height: 30.h,),
                   Row(
@@ -365,7 +218,7 @@ class Second extends StatelessWidget {
           height: 1000.h,
           fit: BoxFit.cover,
         ),
-        Container(width: 80.w,),
+        Container(width: 60.w,),
         Expanded(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -432,172 +285,24 @@ class Second extends StatelessWidget {
                     ),
                   ),
                   Container(height: 20.h,),
-                  Row(
-                    children: [
-                      Flexible(
-                        flex: 2,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            RichText(
-                              text: TextSpan(
-                                  text: '- 탈모 정화 관리 ',
-                                  style: TextStyle(
-                                    fontSize: 27.sp,
-                                  ),
-                                  children: [TextSpan(
-                                    text: 'Puri Scalp Care',
-                                    style: TextStyle(
-                                      fontSize: 27.sp,
-                                    ),
-                                  ),
-                                  ]
-                              ),
-                            ),
-                            Container(
-                              margin: EdgeInsets.only(left: 10.w, top: 5.h,),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text('두피속을 정화하여 모발이 잘 자라나는 환경을 만들고',
-                                    style: TextStyle(
-                                      fontSize: 22.sp,
-                                      color: Colors.grey,
-                                    ),),
-                                  Text('1차 2차를 통한 두피 탈모 관리의 핵심 프로그램입니다',
-                                    style: TextStyle(
-                                      fontSize: 22.sp,
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Container(height: 50.h,),
-                            RichText(
-                              text: TextSpan(
-                                  text: '- 탈모 영양 관리 ',
-                                  style: TextStyle(
-                                    fontSize: 27.sp,
-                                  ),
-                                  children: [TextSpan(
-                                    text: 'Nutri Scalp Care',
-                                    style: TextStyle(
-                                      fontSize: 27.sp,
-                                    ),
-                                  ),
-                                  ]
-                              ),
-                            ),
-                            Container(
-                              margin: EdgeInsets.only(left: 10.w, top: 5.h,),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text('두피 정화 관리 이후 건강한 두피환경에서',
-                                    style: TextStyle(
-                                      fontSize: 22.sp,
-                                      color: Colors.grey,
-                                    ),),
-                                  Text('모발이 건강하고 빠르게 성장하고 굵게 자라도록 하는 프로그램',
-                                    style: TextStyle(
-                                      fontSize: 22.sp,
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Flexible(
-                        flex: 1,
-                        child: Column(
-                          children: [
-                            Row(
-                              children: [
-                                RichText(
-                                  text: TextSpan(
-                                      text: '80,000',
-                                      style: TextStyle(
-                                        fontSize: 25.sp,
-                                        color: Colors.grey,
-                                      ),
-                                      children: [TextSpan(
-                                        text: ' (30분)',
-                                        style: TextStyle(
-                                          fontSize: 20.sp,
-                                          color: Colors.grey,
-                                        ),
-                                      ),
-                                      ]
-                                  ),
-                                ),
-                                Container(width: 40.w,),
-                                RichText(
-                                  text: TextSpan(
-                                      text: '180,000',
-                                      style: TextStyle(
-                                        fontSize: 25.sp,
-                                        color: Colors.grey,
-                                      ),
-                                      children: [TextSpan(
-                                        text: ' (60분)',
-                                        style: TextStyle(
-                                          fontSize: 20.sp,
-                                          color: Colors.grey,
-                                        ),
-                                      ),
-                                      ]
-                                  ),
-                                ),
-                              ],
-                            ),
-                            Container(height: 100.h,),
-                            Row(
-                              children: [
-                                RichText(
-                                  text: TextSpan(
-                                      text: '120,000',
-                                      style: TextStyle(
-                                        fontSize: 25.sp,
-                                        color: Colors.grey,
-                                      ),
-                                      children: [TextSpan(
-                                        text: ' (40분)',
-                                        style: TextStyle(
-                                          fontSize: 20.sp,
-                                          color: Colors.grey,
-                                        ),
-                                      ),
-                                      ]
-                                  ),
-                                ),
-                                Container(width: 40.w,),
-                                RichText(
-                                  text: TextSpan(
-                                      text: '180,000',
-                                      style: TextStyle(
-                                        fontSize: 25.sp,
-                                        color: Colors.grey,
-                                      ),
-                                      children: [TextSpan(
-                                        text: ' (60분)',
-                                        style: TextStyle(
-                                          fontSize: 20.sp,
-                                          color: Colors.grey,
-                                        ),
-                                      ),
-                                      ]
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
+                  SpecialCare(
+                      title: '- 탈모 정화 관리 Puri Scalp Care',
+                      contents1: '두피속을 정화하여 모발이 잘 자라나는 환경을 만들고',
+                      contents2: '1차 2차를 통한 두피 탈모 관리의 핵심 프로그램입니다',
+                      price1: '80,000',
+                      price2: '180,000',
+                      time1: '30',
+                      time2: '60'
+                  ),
+                  Container(height: 50.h,),
+                  SpecialCare(
+                      title: '- 탈모 영양 관리 Nutri Scalp Care',
+                      contents1: '두피 정화 관리 이후 건강한 두피환경에서',
+                      contents2: '모발이 건강하고 빠르게 성장하고 굵게 자라도록 하는 프로그램',
+                      price1: '120,000',
+                      price2: '180,000',
+                      time1: '40',
+                      time2: '60'
                   ),
                   Container(height: 30.h,),
                   Row(
@@ -637,6 +342,105 @@ class Check extends StatelessWidget {
           style: TextStyle(
             fontSize: 20.sp,
           ),)
+      ],
+    );
+  }
+}
+
+
+class SpecialCare extends StatelessWidget {
+  final String title;
+  final String contents1;
+  final String contents2;
+  final String price1;
+  final String price2;
+  final String time1;
+  final String time2;
+
+  SpecialCare({
+    super.key,
+    required this.title,
+    required this.contents1,
+    required this.contents2,
+    required this.price1,
+    required this.price2,
+    required this.time1,
+    required this.time2,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Container(
+          width: 580.w,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(title),
+              Container(
+                margin: EdgeInsets.only(left: 10.w, top: 5.h,),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(contents1,
+                      style: TextStyle(
+                        fontSize: 22.sp,
+                        color: Colors.grey,
+                      ),),
+                    Text(contents2,
+                      style: TextStyle(
+                        fontSize: 22.sp,
+                        color: Colors.grey,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+        Container(width: 40.w,),
+        Expanded(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              RichText(
+                text: TextSpan(
+                    text: price1,
+                    style: TextStyle(
+                      fontSize: 25.sp,
+                      color: Colors.grey,
+                    ),
+                    children: [TextSpan(
+                      text: ' ($time1분)',
+                      style: TextStyle(
+                        fontSize: 20.sp,
+                      ),
+                    ),
+                    ]
+                ),
+              ),
+              Container(height: 16.h,),
+              RichText(
+                text: TextSpan(
+                    text: price2,
+                    style: TextStyle(
+                      fontSize: 22.sp,
+                      color: Colors.grey,
+                    ),
+                    children: [TextSpan(
+                      text: ' ($time2분)',
+                      style: TextStyle(
+                        fontSize: 18.sp,
+                      ),
+                    ),
+                    ]
+                ),
+              ),
+            ],
+          ),
+        ),
       ],
     );
   }
