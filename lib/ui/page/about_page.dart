@@ -28,12 +28,12 @@ class AboutPage extends StatelessWidget {
                         children: [
                           Image.asset('images/about1.jpg',
                             width: double.infinity,
-                            height: 1020.h,
+                            height: 1000.h,
                             fit: BoxFit.cover,
                           ),
                           Container(
                             width: double.infinity,
-                            height: 1020.h,
+                            height: 1000.h,
                             color: GlobalStyle.dark.withOpacity(0.5),
                           ),
                           Positioned(
