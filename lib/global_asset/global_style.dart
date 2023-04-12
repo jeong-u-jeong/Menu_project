@@ -4,6 +4,7 @@ class GlobalStyle {
   static const Color transparent = Color(0xff00000000);
   static const Color white = Color(0xffffffff);
   static const Color dark = Color(0xff1e2225);
-  static const Color menu_bg = Color(0xffd2b194);
+  static const Color menu_bg = Color(0xffded8d4);
+  static const Color menu_text = Color(0xff443b32);
 
 }

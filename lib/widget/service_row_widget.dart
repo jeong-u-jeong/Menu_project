@@ -52,7 +52,7 @@ Widget RowContents(String img, String title, String txt, String price){
                   SizedBox(height: 30.w,),
                   Text(price,
                     style: TextStyle(
-                        fontSize: 22.sp
+                        fontSize: 28.sp
                     ),
                   ),
 
@@ -109,7 +109,7 @@ Widget RowContents2(String img, String title, String txt, String price){
                   SizedBox(height: 30.w,),
                   Text(price,
                     style: TextStyle(
-                        fontSize: 22.sp
+                        fontSize: 28.sp
                     ),
                   ),
 

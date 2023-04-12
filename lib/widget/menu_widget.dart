@@ -27,14 +27,33 @@ class menu extends StatelessWidget {
               ),
               Container(
                 width: 190,
-                height: 150.h,
-                color: Colors.white,
-                child: Center(
-                  child: Text('Logo',
-                    style: TextStyle(
-                      fontSize: 30
+                height: 76,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Beauty Brain Therapy Solutions',
+                      style: TextStyle(
+                        fontSize: 9,
+                        color: GlobalStyle.menu_text
+                      ),
                     ),
-                  ),
+                    Container(
+                      margin: EdgeInsets.fromLTRB(0, 4, 0, 17),
+                      width: double.infinity,
+                      height: 0.5,
+                      color: GlobalStyle.menu_text,
+                    ),
+                    Container(
+                      width: double.infinity,
+                      child: Text('B I T',
+                        style: TextStyle(
+                          fontSize: 22,
+                          color: GlobalStyle.menu_text,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ]
                 ),
               ),
               SizedBox(
@@ -76,7 +95,8 @@ class menu extends StatelessWidget {
             children: [
               Text('Reservation',
                 style: TextStyle(
-                  fontSize: 16
+                  fontSize: 10,
+                  color: GlobalStyle.menu_text,
                 ),
               ),
               SizedBox(
@@ -84,29 +104,19 @@ class menu extends StatelessWidget {
               ),
               Row(
                 children: [
+                  Icon(Icons.phone,
+                    size: 13,
+                    color: GlobalStyle.menu_text,
+                  ),
                   Container(
-                    color: Colors.grey,
-                    width: 50,
-                    height: 70,
+                    width: 5,
                   ),
-                  SizedBox(
-                    width: 10,
+                  Text('02-222-1111',
+                    style: TextStyle(
+                      fontSize: 14,
+                      color: GlobalStyle.menu_text,
+                    ),
                   ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text('02 222',
-                        style: TextStyle(
-                          fontSize: 26
-                        ),
-                      ),
-                      Text('2222',
-                        style: TextStyle(
-                            fontSize: 26
-                        ),
-                      ),
-                    ],
-                  )
                 ],
               ),
               SizedBox(
@@ -128,7 +138,8 @@ Widget mainMenu(String menu, GestureTapCallback onTap){
       padding: const EdgeInsets.symmetric(vertical: 16),
       child: Text(menu,
         style: TextStyle(
-          fontSize: 16,
+          fontSize: 14,
+          color: GlobalStyle.menu_text
         ),
       ),
     ),
