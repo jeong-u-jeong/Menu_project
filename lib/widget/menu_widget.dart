@@ -25,35 +25,43 @@ class menu extends StatelessWidget {
               SizedBox(
                 height: 42,
               ),
-              Container(
-                width: 190,
-                height: 76,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text('Beauty Brain Therapy Solutions',
-                      style: TextStyle(
-                        fontSize: 9,
-                        color: GlobalStyle.menu_text
-                      ),
-                    ),
-                    Container(
-                      margin: EdgeInsets.fromLTRB(0, 4, 0, 17),
-                      width: double.infinity,
-                      height: 0.5,
-                      color: GlobalStyle.menu_text,
-                    ),
-                    Container(
-                      width: double.infinity,
-                      child: Text('B I T',
-                        style: TextStyle(
-                          fontSize: 22,
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    UnanimatedPageRoute(builder: (context) => HomePage(),),
+                  );
+                },
+                child: Container(
+                  width: 190,
+                  height: 76,
+                  child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('Beauty Brain Therapy Solutions',
+                          style: TextStyle(
+                              fontSize: 9,
+                              color: GlobalStyle.menu_text
+                          ),
+                        ),
+                        Container(
+                          margin: EdgeInsets.fromLTRB(0, 4, 0, 17),
+                          width: double.infinity,
+                          height: 0.5,
                           color: GlobalStyle.menu_text,
                         ),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                  ]
+                        Container(
+                          width: double.infinity,
+                          child: Text('B I T',
+                            style: TextStyle(
+                              fontSize: 22,
+                              color: GlobalStyle.menu_text,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ]
+                  ),
                 ),
               ),
               SizedBox(
@@ -64,8 +72,8 @@ class menu extends StatelessWidget {
                 children: [
                   mainMenu('HOME',(){
                     Navigator.push(
-                        context,
-                        UnanimatedPageRoute(builder: (context) => HomePage(),),
+                      context,
+                      UnanimatedPageRoute(builder: (context) => HomePage(),),
                     );
                   }),
                   mainMenu('ABOUT',(){
@@ -138,8 +146,8 @@ Widget mainMenu(String menu, GestureTapCallback onTap){
       padding: const EdgeInsets.symmetric(vertical: 16),
       child: Text(menu,
         style: TextStyle(
-          fontSize: 14,
-          color: GlobalStyle.menu_text
+            fontSize: 14,
+            color: GlobalStyle.menu_text
         ),
       ),
     ),
