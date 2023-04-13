@@ -22,34 +22,33 @@ class AboutPage extends StatelessWidget {
             child: SingleChildScrollView(
                 child: Column(
                   children: [
-                    Container(
-                        child: Stack(
-                          children: [
-                            Image.asset('images/about1.jpg',
-                              width: double.infinity,
-                              height: 1000.h,
-                              fit: BoxFit.cover,
-                            ),
-                            Container(
-                              width: double.infinity,
-                              height: 1000.h,
-                              color: GlobalStyle.dark.withOpacity(0.5),
-                            ),
-                            Positioned(
-                                top: 600.h,
-                                left: 270.h,
-                                child: Text(
-                                  'About Us',
-                                  style: TextStyle(
-                                      fontSize: 72.sp,
-                                      color: GlobalStyle.white
-                                  ),
-                                )
+                    Stack(
+                      children: [
+                        Image.asset('images/about1.jpg',
+                          width: double.infinity,
+                          height: 1000.h,
+                          fit: BoxFit.cover,
+                        ),
+                        Container(
+                          width: double.infinity,
+                          height: 1000.h,
+                          color: GlobalStyle.dark.withOpacity(0.5),
+                        ),
+                        Positioned(
+                            top: 600.h,
+                            left: 270.h,
+                            child: Text(
+                              'About Us',
+                              style: TextStyle(
+                                  fontSize: 72.sp,
+                                  color: GlobalStyle.white
+                              ),
                             )
-                          ],
                         )
+                      ],
                     ),
                     Container(
+                        color: GlobalStyle.white,
                         padding: EdgeInsets.symmetric(horizontal: 60.w),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -62,12 +61,14 @@ class AboutPage extends StatelessWidget {
                                   Text('BIT',
                                     style: TextStyle(
                                       fontSize: 48.sp,
+                                      color: GlobalStyle.dark
                                     ),
                                   ),
                                   Container(height: 32.h,),
                                   Text('모발과 두피 탈모 케어를 초월한 뷰티 브레인 테라피 솔루션',
                                     style: TextStyle(
                                       fontSize: 26.sp,
+                                      color: GlobalStyle.dark
                                     ),
                                   ),
                                   Container(
@@ -79,7 +80,7 @@ class AboutPage extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            SizedBox(height: 60.w,),
+                            Container(height: 60.w,),
                             Row(
                               children: [
                                 Container(
@@ -89,7 +90,7 @@ class AboutPage extends StatelessWidget {
                                     fit: BoxFit.cover,
                                   ),
                                 ),
-                                SizedBox(width: 40.w,),
+                                Container(width: 40.w,),
                                 Expanded(
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.end,
@@ -98,14 +99,16 @@ class AboutPage extends StatelessWidget {
                                       Text('두피를 건강하게 하는 것은 불특정 소수만 할 수 있는 특별한 것이 아니에요.',
                                         textAlign: TextAlign.end,
                                         style: TextStyle(
-                                            fontSize: 26.sp
+                                            fontSize: 26.sp,
+                                            color: GlobalStyle.dark
                                         ),
                                       ),
                                       Container(height: 50.h,),
                                       Text('Welcome to the best five-star deluxe hotel in New York. Hotel elementum sesue the aucan vestibulum aliquam justo in sapien rutrum volutpat. Done viventa the pellentesque velit. Donec id velit posuere blane. Hotel ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan ligula. Orci varius natoque penatibus et magnis dis parturien mont nascete ridiculus mus nellentesque habitant morbine.',
                                         textAlign: TextAlign.end,
                                         style: TextStyle(
-                                            fontSize: 26.sp
+                                            fontSize: 26.sp,
+                                            color: GlobalStyle.dark
                                         ),
                                       ),
 
@@ -124,21 +127,23 @@ class AboutPage extends StatelessWidget {
                                       Text('누구든 편하게 방문할 수 있는 그곳, 우리가 함께 만드는 문화',
                                         textAlign: TextAlign.start,
                                         style: TextStyle(
-                                            fontSize: 26.sp
+                                            fontSize: 26.sp,
+                                            color: GlobalStyle.dark
                                         ),
                                       ),
                                       Container(height: 50.h,),
                                       Text('Welcome to the best five-star deluxe hotel in New York. Hotel elementum sesue the aucan vestibulum aliquam justo in sapien rutrum volutpat. Done viventa the pellentesque velit. Donec id velit posuere blane. Hotel ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan ligula. Orci varius natoque penatibus et magnis dis parturien mont nascete ridiculus mus nellentesque habitant morbine.',
                                         textAlign: TextAlign.start,
                                         style: TextStyle(
-                                            fontSize: 26.sp
+                                            fontSize: 26.sp,
+                                            color: GlobalStyle.dark
                                         ),
                                       ),
 
                                     ],
                                   ),
                                 ),
-                                SizedBox(width: 40.w,),
+                                Container(width: 40.w,),
                                 Container(
                                   width: 430.w,
                                   height: 500.w,
@@ -151,7 +156,7 @@ class AboutPage extends StatelessWidget {
                           ],
                         )
                     ),
-                    SizedBox(height: 110.w,),
+                    Container(height: 110.w,),
                     Container(
                       width: double.infinity,
                       height: 800.h,

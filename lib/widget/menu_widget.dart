@@ -22,7 +22,7 @@ class menu extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(
+              Container(
                 height: 42,
               ),
               GestureDetector(
@@ -64,7 +64,7 @@ class menu extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              Container(
                 height: 32,
               ),
               Column(
@@ -107,7 +107,7 @@ class menu extends StatelessWidget {
                   color: GlobalStyle.menu_text,
                 ),
               ),
-              SizedBox(
+              Container(
                 height: 10,
               ),
               Row(
@@ -127,7 +127,7 @@ class menu extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
+              Container(
                 height: 30,
               ),
             ],

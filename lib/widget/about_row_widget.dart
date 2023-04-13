@@ -24,8 +24,8 @@ class AboutRowWidget extends StatelessWidget {
           height: 500.h,
           decoration: BoxDecoration(
               border: Border.all(
-                color: GlobalStyle.dark.withOpacity(0.3),
-                width: 1,
+                color: GlobalStyle.dark.withOpacity(0.5),
+                width: 0.5,
               )
           ),
           child: Column(
@@ -33,18 +33,21 @@ class AboutRowWidget extends StatelessWidget {
             children: [
               Icon(icon,
                 size: 90.sp,
+                color: GlobalStyle.dark,
               ),
               Container(height: 30.h),
               Text(title,
                 style: TextStyle(
-                  fontSize: 28.sp
+                  fontSize: 28.sp,
+                  color: GlobalStyle.dark,
                 ),
               ),
               Container(height: 30.h),
               Text(txt,
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                    fontSize: 24.sp
+                    fontSize: 24.sp,
+                    color: GlobalStyle.dark,
                 ),
               )
             ],

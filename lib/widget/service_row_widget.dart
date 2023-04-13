@@ -9,10 +9,10 @@ Widget RowContents(String img, String title, String txt, String price){
       decoration: BoxDecoration(
         boxShadow: [
           BoxShadow(
-              color: Colors.grey.withOpacity(0.3),
-              offset: Offset(0, 2),
-              blurRadius: 10,
-              spreadRadius: 2
+              color: GlobalStyle.dark.withOpacity(0.1),
+              offset: Offset(0, 1),
+              blurRadius: 5,
+              spreadRadius: 0
           )
         ],
       ),
@@ -40,19 +40,22 @@ Widget RowContents(String img, String title, String txt, String price){
                 children: [
                   Text(title,
                     style: TextStyle(
-                        fontSize: 30.sp
+                        fontSize: 30.sp,
+                        color: GlobalStyle.dark
                     ),
                   ),
-                  SizedBox(height: 30.w,),
+                  Container(height: 30.w,),
                   Text(txt,
                     style: TextStyle(
-                        fontSize: 24.sp
+                        fontSize: 24.sp,
+                        color: GlobalStyle.dark
                     ),
                   ),
-                  SizedBox(height: 30.w,),
+                  Container(height: 30.w,),
                   Text(price,
                     style: TextStyle(
-                        fontSize: 28.sp
+                        fontSize: 28.sp,
+                        color: GlobalStyle.dark
                     ),
                   ),
 
@@ -74,10 +77,10 @@ Widget RowContents2(String img, String title, String txt, String price){
       decoration: BoxDecoration(
         boxShadow: [
           BoxShadow(
-              color: Colors.grey.withOpacity(0.3),
-              offset: Offset(0, 2),
-              blurRadius: 10,
-              spreadRadius: 2
+              color: GlobalStyle.dark.withOpacity(0.1),
+              offset: Offset(0, 1),
+              blurRadius: 5,
+              spreadRadius: 0
           )
         ],
       ),
@@ -97,19 +100,22 @@ Widget RowContents2(String img, String title, String txt, String price){
                 children: [
                   Text(title,
                     style: TextStyle(
-                        fontSize: 30.sp
+                        fontSize: 30.sp,
+                        color: GlobalStyle.dark
                     ),
                   ),
-                  SizedBox(height: 30.w,),
+                  Container(height: 30.w,),
                   Text(txt,
                     style: TextStyle(
-                        fontSize: 24.sp
+                        fontSize: 24.sp,
+                        color: GlobalStyle.dark
                     ),
                   ),
-                  SizedBox(height: 30.w,),
+                  Container(height: 30.w,),
                   Text(price,
                     style: TextStyle(
-                        fontSize: 28.sp
+                        fontSize: 28.sp,
+                        color: GlobalStyle.dark
                     ),
                   ),
 
