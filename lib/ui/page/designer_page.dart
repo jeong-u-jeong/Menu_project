@@ -18,52 +18,55 @@ class Designer extends StatelessWidget {
           menu(),
           Expanded(
             child: SingleChildScrollView(
-                child: Column(
-                  children: [
-                    Stack(
-                      children: [
-                        Image.asset('images/designer_background.png',
-                          width: double.infinity,
-                          height: 1000.h,
-                          fit: BoxFit.cover,
-                        ),
-                        Container(
-                          width: double.infinity,
-                          height: 1000.h,
-                          color: GlobalStyle.dark.withOpacity(0.5),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text('Introducing the ',
-                                style: TextStyle(
-                                  fontSize: 45.sp,
-                                  color: Colors.white,
-                                ),
-                              ),
-                              Text('BIT Designer',
-                                style: TextStyle(
-                                  fontSize: 45.sp,
-                                  color: Colors.white,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                    Container(height: 150.h,),
-                    Padding(
-                      padding: EdgeInsets.only(left: 100.w, right: 80.w),
-                      child: Column(
+                child: Container(
+                  color: GlobalStyle.white,
+                  child: Column(
+                    children: [
+                      Stack(
                         children: [
-                          First(),
-                          Container(height: 150.h,),
-                          Second(),
-                          Container(height: 100.h,),
+                          Image.asset('images/designer_background.png',
+                            width: double.infinity,
+                            height: 1000.h,
+                            fit: BoxFit.cover,
+                          ),
+                          Container(
+                            width: double.infinity,
+                            height: 1000.h,
+                            color: GlobalStyle.dark.withOpacity(0.5),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text('Introducing the ',
+                                  style: TextStyle(
+                                    fontSize: 45.sp,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                Text('BIT Designer',
+                                  style: TextStyle(
+                                    fontSize: 45.sp,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
                         ],
                       ),
-                    ),
-                  ],
+                      Container(height: 150.h,),
+                      Padding(
+                        padding: EdgeInsets.only(left: 100.w, right: 80.w),
+                        child: Column(
+                          children: [
+                            First(),
+                            Container(height: 150.h,),
+                            Second(),
+                            Container(height: 100.h,),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
                 )
             ),
           )
