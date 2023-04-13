@@ -161,7 +161,7 @@ class AboutPage extends StatelessWidget {
                       width: double.infinity,
                       height: 800.h,
                       decoration: BoxDecoration(
-                          color: GlobalStyle.menu_bg.withOpacity(0.3)
+                          color: GlobalStyle.beige
                       ),
                       child: Column(
                         children: [

@@ -47,6 +47,7 @@ class ServicePage extends StatelessWidget {
                     ],
                   ),
                   Container(
+                      color: GlobalStyle.white,
                       padding: EdgeInsets.symmetric(horizontal: 60.w),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
