@@ -1,3 +1,4 @@
+import 'package:project_menu/global_asset/global_style.dart';
 import 'package:project_menu/widget/carouselslider_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:project_menu/widget/menu_widget.dart';
@@ -42,15 +43,18 @@ class Introduce extends StatelessWidget {
         Container(height: 200.h,),
         Text('BIT의 솔루션', style: TextStyle(
           fontSize: 43.sp,
+          color: GlobalStyle.dark,
         ),
         ),
         Container(height: 30.h,),
         Text('모발과 두피 탈모 케어를 초월한 뷰티 브레인 테라피', style: TextStyle(
           fontSize: 30.sp,
+          color: GlobalStyle.dark,
         ),
         ),
         Text('우수한 운영진을 통한 건강하고 체계적인 관리 프로세서', style: TextStyle(
           fontSize: 30.sp,
+          color: GlobalStyle.dark,
         ),
         ),
         Container(height: 90.h,),
@@ -78,12 +82,12 @@ class Introduce extends StatelessWidget {
           width: 1000.w,
           height: 450.w,
           decoration: BoxDecoration(
-            color: Colors.white,
+            color: GlobalStyle.white,
             boxShadow: [
               BoxShadow(
                 blurRadius: 15,
                 offset: const Offset(10, 10),
-                color: Colors.black.withOpacity(0.1),
+                color: GlobalStyle.dark.withOpacity(0.1),
               )
             ],
           ),
@@ -97,7 +101,7 @@ class Introduce extends StatelessWidget {
                 decoration: BoxDecoration(
                   border: Border(
                     bottom: BorderSide(
-                      color: Color(0xffcec3b8),
+                      color: GlobalStyle.menu_bg,
                       width: 3.0,
                     ),
                   ),
@@ -107,6 +111,7 @@ class Introduce extends StatelessWidget {
                   child: Text('탈모 약정관리   Special Agreement Care', style: TextStyle(
                     fontSize: 30.sp,
                     fontWeight: FontWeight.w800,
+                    color: GlobalStyle.dark,
                   ),),
                 ),
               ),
@@ -117,13 +122,16 @@ class Introduce extends StatelessWidget {
                     Container(height: 30.h,),
                     Text('약정 관리 90분 __ 360,000원', style: TextStyle(
                       fontSize: 27.sp,
+                      color: GlobalStyle.dark,
                     ),),
                     Text('월간 10명을 한정해 선착순 할인합니다', style: TextStyle(
                       fontSize: 27.sp,
+                      color: GlobalStyle.dark,
                     ),),
                     Container(height: 50.h,),
                     Text('대상: 두피 진단, 상담 후 결정', style: TextStyle(
                       fontSize: 27.sp,
+                      color: GlobalStyle.dark,
                     ),),
                   ],
                 ),
@@ -155,7 +163,7 @@ class IntroDesigner extends StatelessWidget {
         Container(height: 45.h,),
         Text(sub,
           style: TextStyle(
-            color: Colors.black54,
+            color: GlobalStyle.profile_sub,
             fontSize: 23.sp,
           ),
         ),
@@ -166,6 +174,7 @@ class IntroDesigner extends StatelessWidget {
               style: TextStyle(
                 fontSize: 35.sp,
                 fontWeight: FontWeight.w300,
+                color: GlobalStyle.dark,
               ),
               children: [
                 TextSpan(
@@ -173,6 +182,7 @@ class IntroDesigner extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 30.sp,
                     fontWeight: FontWeight.normal,
+                    color: GlobalStyle.dark,
                   ),
                 ),
               ]
@@ -182,8 +192,6 @@ class IntroDesigner extends StatelessWidget {
     );
   }
 }
-
-
 
 
 
@@ -199,12 +207,12 @@ class Process extends StatelessWidget {
       width: 700.w,
       height: 400.h,
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: GlobalStyle.white,
         boxShadow: [
           BoxShadow(
             blurRadius: 15,
             offset: const Offset(10, 10),
-            color: Colors.black.withOpacity(0.1),
+          color: GlobalStyle.dark.withOpacity(0.1),
           )
         ],
       ),
@@ -216,7 +224,7 @@ class Process extends StatelessWidget {
             decoration: BoxDecoration(
               border: Border(
                 bottom: BorderSide(
-                  color: Color(0xffcec3b8),
+                  color: GlobalStyle.menu_bg,
                   width: 3.0,
                 ),
               ),
@@ -224,6 +232,7 @@ class Process extends StatelessWidget {
             child: Text(title, style: TextStyle(
               fontSize: 30.sp,
               fontWeight: FontWeight.w800,
+              color: GlobalStyle.dark,
             ),),
           ),
           Container(
@@ -232,6 +241,7 @@ class Process extends StatelessWidget {
               children: [
                 Text(sub, style: TextStyle(
                   fontSize: 25.sp,
+                  color: GlobalStyle.dark,
                 ),),
               ],
             ),

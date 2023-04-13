@@ -102,6 +102,7 @@ class First extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 50.sp,
                       fontWeight: FontWeight.w500,
+                      color: GlobalStyle.dark,
                     ),
                     children: [
                       TextSpan(
@@ -110,6 +111,7 @@ class First extends StatelessWidget {
                           fontSize: 30.sp,
                           fontWeight: FontWeight.normal,
                           fontStyle: FontStyle.italic,
+                          color: GlobalStyle.dark,
                         ),
                       ),
                     ]
@@ -124,11 +126,13 @@ class First extends StatelessWidget {
                     Text('헤어에 관련한 스트레스로부터 도움드리는 두피 탈모 전문가입니다',
                       style: TextStyle(
                         fontSize: 25.sp,
+                        color: GlobalStyle.dark,
                       ),
                     ),
                     Text('건강하게 관리하여 예방하는 것을 목표로 시작합니다',
                       style: TextStyle(
                         fontSize: 25.sp,
+                        color: GlobalStyle.dark,
                       ),
                     ),
                   ],
@@ -143,13 +147,13 @@ class First extends StatelessWidget {
                         text: '스페셜 케어',
                         style: TextStyle(
                           fontSize: 40.sp,
-                          color: Colors.blue,
+                          color: GlobalStyle.menu_text,
                         ),
                         children: [TextSpan(
                           text: ' Special Care',
                           style: TextStyle(
                             fontSize: 30.sp,
-                            color: Colors.blue,
+                            color: GlobalStyle.menu_text,
                           ),
                         ),
                         ]
@@ -231,6 +235,7 @@ class Second extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 50.sp,
                       fontWeight: FontWeight.w500,
+                      color: GlobalStyle.dark,
                     ),
                     children: [
                       TextSpan(
@@ -239,6 +244,7 @@ class Second extends StatelessWidget {
                           fontSize: 30.sp,
                           fontWeight: FontWeight.normal,
                           fontStyle: FontStyle.italic,
+                          color: GlobalStyle.dark,
                         ),
                       ),
                     ]
@@ -253,11 +259,13 @@ class Second extends StatelessWidget {
                     Text('모두의 건강과 스트레스를 날려드릴 두피 탈모 전문가입니다',
                       style: TextStyle(
                         fontSize: 25.sp,
+                        color: GlobalStyle.dark,
                       ),
                     ),
                     Text('문제를 정확하게 해결하여 도움드립니다',
                       style: TextStyle(
                         fontSize: 25.sp,
+                        color: GlobalStyle.dark,
                       ),
                     ),
                   ],
@@ -272,13 +280,13 @@ class Second extends StatelessWidget {
                         text: '스페셜 케어',
                         style: TextStyle(
                           fontSize: 40.sp,
-                          color: Colors.blue,
+                          color: GlobalStyle.menu_text,
                         ),
                         children: [TextSpan(
                           text: ' Special Care',
                           style: TextStyle(
                             fontSize: 30.sp,
-                            color: Colors.blue,
+                            color: GlobalStyle.menu_text,
                           ),
                         ),
                         ]
@@ -341,6 +349,7 @@ class Check extends StatelessWidget {
         Text(type,
           style: TextStyle(
             fontSize: 20.sp,
+            color: GlobalStyle.dark,
           ),)
       ],
     );
@@ -379,7 +388,8 @@ class SpecialCare extends StatelessWidget {
             children: [
               Text(title,
                 style: TextStyle(
-                  fontSize: 26.sp
+                  fontSize: 26.sp,
+                  color: GlobalStyle.dark,
                 ),
               ),
               Container(
@@ -390,12 +400,12 @@ class SpecialCare extends StatelessWidget {
                     Text(contents1,
                       style: TextStyle(
                         fontSize: 22.sp,
-                        color: Colors.grey,
+                        color: GlobalStyle.profile_sub,
                       ),),
                     Text(contents2,
                       style: TextStyle(
                         fontSize: 22.sp,
-                        color: Colors.grey,
+                        color: GlobalStyle.profile_sub,
                       ),
                     ),
                   ],
@@ -414,7 +424,7 @@ class SpecialCare extends StatelessWidget {
                     text: price1,
                     style: TextStyle(
                       fontSize: 25.sp,
-                      color: Colors.grey,
+                      color: GlobalStyle.profile_sub,
                     ),
                     children: [TextSpan(
                       text: ' ($time1분)',
@@ -431,7 +441,7 @@ class SpecialCare extends StatelessWidget {
                     text: price2,
                     style: TextStyle(
                       fontSize: 22.sp,
-                      color: Colors.grey,
+                      color: GlobalStyle.profile_sub,
                     ),
                     children: [TextSpan(
                       text: ' ($time2분)',

@@ -6,5 +6,5 @@ class GlobalStyle {
   static const Color dark = Color(0xff1e2225);
   static const Color menu_bg = Color(0xffded8d4);
   static const Color menu_text = Color(0xff443b32);
-
+  static const Color profile_sub = Color(0xff767676);
 }
